@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "prettier/react",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2019,
+    "sourceType": "module",
+    "experimentalDecorators": 1
+  },
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }]
+  },
+  "env": {
+    "browser": true
+  }
+}
