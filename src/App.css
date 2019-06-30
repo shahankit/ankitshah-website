@@ -1,6 +1,12 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
 .app {
   background: linear-gradient(90deg, #0c095e, #1045db);
-  min-height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
