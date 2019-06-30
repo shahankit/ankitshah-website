@@ -1,33 +1,34 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
+  background: linear-gradient(90deg, #0c095e, #1045db);
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.title {
+  font-size: 150px;
   color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  transition: font-size 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: portrait) {
+  .title {
+    font-size: 60px;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape),
+  only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .title {
+    font-size: 90px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape),
+  only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+  .title {
+    font-size: 120px;
   }
 }
