@@ -16,7 +16,8 @@
   },
   "plugins": ["@typescript-eslint"],
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }]
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
+    "no-param-reassign": ["error", { "props": false }]
   },
   "env": {
     "browser": true

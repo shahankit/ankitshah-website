@@ -12,9 +12,7 @@ body,
   justify-content: center;
 }
 
-.title {
-  color: white;
-  font-family: Avenir, Nunito, sans-serif;
+.title-container {
   transition: all 0.3s ease;
   background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.4);
@@ -25,24 +23,56 @@ body,
   padding: 20px 60px 18px;
 }
 
+.title {
+  color: white;
+  font-family: Avenir, Nunito, sans-serif;
+  padding-right: 4px;
+}
+
+.cursor-animation {
+  border-right: 4px solid white;
+  animation: blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: white;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: portrait) {
-  .title {
+  .title-container {
     font-size: 50px;
     padding: 10px 25px 8px;
+  }
+
+  .cursor-animation {
+    border-right-width: 2px;
   }
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 812px) and (orientation: landscape),
   only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .title {
+  .title-container {
     font-size: 90px;
     padding: 20px 60px 18px;
+  }
+
+  .cursor-animation {
+    border-right-width: 4px;
   }
 }
 
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
-  .title {
+  .title-container {
     font-size: 120px;
     padding: 20px 60px 18px;
+  }
+
+  .cursor-animation {
+    border-right-width: 4px;
   }
 }
